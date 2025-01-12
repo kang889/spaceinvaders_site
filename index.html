@@ -155,7 +155,7 @@
     self.AudioContext = new Proxy(self.AudioContext, {
       construct(t, e) {
         const n = new t(...e);
-        return audioContexList.push(n), "suspended" == n.state && (audioBtn.value = "🔈 RESUME"),
+        return audioContexList.push(n), "suspended" == n.state && (audioBtn.value = "🔈 MUSIC"),
         n;
       }
     });
